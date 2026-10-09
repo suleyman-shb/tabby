@@ -1,0 +1,12 @@
+.rdp-container
+    .rdp-status(*ngIf='!connected')
+        i.fas.fa-circle-notch.fa-spin.me-2
+        span {{ statusText }}
+    canvas(#canvas,
+        [attr.width]='profile.options.width || 1280',
+        [attr.height]='profile.options.height || 720',
+        (mousemove)='onMouseMove($event)',
+        (mousedown)='onMouseDown($event)',
+        (mouseup)='onMouseUp($event)',
+        [style.display]='connected ? "block" : "none"'
+    )

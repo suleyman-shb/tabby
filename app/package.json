@@ -58,7 +58,9 @@
     "tabby-serial": "*",
     "tabby-settings": "*",
     "tabby-ssh": "*",
-    "tabby-terminal": "*"
+    "tabby-terminal": "*",
+    "tabby-telnet": "*",
+    "tabby-rdp": "*"
   },
   "resolutions": {
     "node-abi": "4.35.0",

@@ -1,0 +1,60 @@
+ul.nav-tabs(ngbNav, #nav='ngbNav')
+    li(ngbNavItem)
+        a(ngbNavLink, translate) General
+        ng-template(ngbNavContent)
+            .mb-3
+                label(translate) Host
+                input.form-control(
+                    type='text',
+                    [(ngModel)]='profile.options.host',
+                )
+
+            .mb-3
+                label(translate) Port
+                input.form-control(
+                    type='number',
+                    placeholder='3389',
+                    [(ngModel)]='profile.options.port',
+                )
+
+            .mb-3
+                label(translate) Username
+                input.form-control(
+                    type='text',
+                    [(ngModel)]='profile.options.user',
+                )
+
+            .mb-3
+                label(translate) Domain
+                input.form-control(
+                    type='text',
+                    [(ngModel)]='profile.options.domain',
+                )
+
+            .mb-3
+                label(translate) Password
+                input.form-control(
+                    type='password',
+                    [(ngModel)]='profile.options.password',
+                )
+
+    li(ngbNavItem)
+        a(ngbNavLink, translate) Display
+        ng-template(ngbNavContent)
+            .mb-3
+                label(translate) Width
+                input.form-control(
+                    type='number',
+                    placeholder='1280',
+                    [(ngModel)]='profile.options.width',
+                )
+
+            .mb-3
+                label(translate) Height
+                input.form-control(
+                    type='number',
+                    placeholder='720',
+                    [(ngModel)]='profile.options.height',
+                )
+
+div([ngbNavOutlet]='nav')
