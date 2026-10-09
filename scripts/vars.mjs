@@ -27,6 +27,7 @@ export const builtinPlugins = [
     'tabby-ssh',
     'tabby-serial',
     'tabby-telnet',
+    'tabby-rdp',
     'tabby-local',
     'tabby-electron',
     'tabby-plugin-manager',
